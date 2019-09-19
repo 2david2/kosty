@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <img id="1" src="kosty1.jpg">
+</br>
+    <button onclick="p1()">generate</button>
+</center>
+
+<script>
+    score=0
+    function p1() {
+        score = Math.floor(Math.random()*6)+1
+        console.log(score)
+        if (score===1) {
+            document.getElementById('1').src="kosty1.jpg"
+        }
+        if (score===2) {
+            document.getElementById('1').src="kosty2.jpg"
+        }
+        if (score===3) {
+            document.getElementById('1').src="kosty3.jpg"
+        }
+        if (score===4) {
+            document.getElementById('1').src="kosty4.jpg"
+        }
+        if (score===5) {
+            document.getElementById('1').src="kosty5.jpg"
+        }
+        if (score===6) {
+            document.getElementById('1').src="kosty6.jpg"
+        }
+    }
+</script>
+
+</body>
+</html>
